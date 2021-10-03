@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+}
+
+:root {
+  --color-green: #00DF5E;
+  --color-grey: #333333;
+  --color-grey-dark: #212121;
+  --color-black: #171717;
+  --color-grey-white: #828282;
+  --color-white: #F9F9F9;
+  --color-primary-white: #212429;
+  --color-primary-black: #FFFFFF;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 'DM Sans', sans-serif;
+  background: var(--color-black);
+}
+
+body, a {
+  color: var(--color-white);
+}
+
+.main-content {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.nav-flex {
+  margin-top: 3.5rem;
+  margin-bottom: 11.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 2.6rem;
+  line-height: 3.385rem;
+}
+
+.navegacao ul {
+  display: flex;
+  align-items: center;
+}
+
+.navegacao ul li + li {
+  margin-left: 4.5rem;
+} 
+
+.navegacao ul li a {
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.apresentacao,
+.apresentacao-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.apresentacao h1 {
+  max-width: 22.1rem;
+  height: 9.4rem;
+  font-size: 3.6rem;
+}
+
+.apresentacao p {
+  max-width: 33.7rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--color-grey-white);
+  margin: 1.8rem 0 3.5rem 0;
+}
+
+.buttons,
+.dados-pessoais-flex,
+.dados-pessoais {
+  display: flex;
+  align-items: center;
+}
+
+.apresentacao button[type="submit"] {
+  display: inline-block;
+  max-width: 14.3rem;
+  background: var(--color-green);
+  padding: 1.2rem 2.7rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.apresentacao button[type="submit"]:nth-child(2) {
+  max-width: 15.7rem;
+  padding: 1.2rem 1.8rem;
+  background: none;
+  border: 1px solid var(--color-grey); 
+  color: var(--color-white);
+}
+
+.apresentacao button + button {
+  margin-left: 1.5rem;
+}
+
+.apresentacao-logo {
+  align-items: flex-end;
+}
+
+.apresentacao-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  grid-column: 1 / 3;
+}
+
+.about-flex,
+.item,
+.projetos-titulo,
+.services,
+.skills-titulo,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-flex {
+  margin-top: 16rem;
+}
+
+.about-flex h1 {
+  font-size: 3.2rem;
+  line-height: 4.166rem;
+}
+
+.about-flex p {
+  font-size: 1.8rem;  
+  color: var(--color-grey-white);
+  text-align: center;
+  margin: 3rem 0 8.5rem 0;
+  line-height: 3.2rem;
+}
+
+.secondary-content {
+  max-width: 74.5rem;
+  margin: 0 auto;
+}
+
+.dados-pessoais {
+  grid-column: 1 / 3;
+  margin-bottom: 12.7rem;
+}
+
+.item,
+.projetos-titulo,
+.services {
+  justify-content: center;
+}
+
+.item + .item {
+  margin-left: 12.1rem;
+}
+
+.item img {
+  padding: 1.5rem;
+  background: var(--color-grey-dark);
+  border-radius: 50%;
+}
+
+.item h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1.9rem 0 .5rem 0;
+}
+
+.item p {
+  color: var(--color-grey-white);
+  font-size: 1.6rem;
+}
+
+.projetos {
+  margin-bottom: 12.7rem;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.5rem;
+}
+
+.projetos-titulo,
+.services,
+.skills-titulo h3,
+.titulo-services h3,
+.projetos-titulo h1 {
+  grid-column: 1 / 4;
+  font-size: 3.2rem;
+}
+
+.card {
+  max-width: 35rem;
+  background: var(--color-grey-dark);
+  padding: 2rem 2.5rem;
+}
+
+.fundo {
+  background: var(--color-black);
+  max-width: 30rem;
+  height: 13rem;
+  margin-bottom: 2.3rem;
+}
+
+.card h3 {
+  font-size: var(--color-primary-black);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: .6rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  color: var(--color-grey-white);
+}
+
+.services {
+  margin-bottom: 12.7rem;
+}
+
+.services h3,
+.skills-titulo h3 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.5rem;
+}
+
+.card-services {
+  min-width: 35rem;
+  background: var(--color-grey-dark);
+  padding: 3rem;
+  border-bottom: .5rem solid var(--color-green);
+}
+
+.card-services img {
+  margin-bottom: 4rem;
+}
+
+.card-services p {
+  max-width: 12.6rem;
+  font-size: 3.2rem;
+  color: var(--color-grey-white);
+}
+
+.skills {
+  margin-bottom: 18.5rem;
+}
+
+.skills-flex {
+  display: flex;
+}
+
+.card-tecnology {
+  padding: 3.5rem;
+  background: var(--color-grey-dark);
+  display: flex;
+  align-items: center;
+}
+
+.skills div + div {
+  margin-left: 5.1rem;
+}
+
+.footer {
+  background: var(--color-grey-dark);
+}
+
+.footer p {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.footer p span {
+  color: var(--color-green);
+}
+
+
+
+
+
